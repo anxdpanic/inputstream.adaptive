@@ -151,7 +151,8 @@ bool HLSTree::open(const std::string &url, const std::string &manifestUpdatePara
             rep->source_url_ = base_url_ + res->second;
           else
             rep->source_url_ = res->second;
-
+          Log(LOGLEVEL_DEBUG, "************* base_url_.c_str(): ", base_url_.c_str());
+          Log(LOGLEVEL_DEBUG, "************* rep->source_url_.c_str(): ", rep->source_url_.c_str());
           if (!manifest_parameter_.empty()
             && rep->source_url_.compare(0, base_url_.size(), base_url_) == 0
             && rep->source_url_.find('?') == std::string::npos)
