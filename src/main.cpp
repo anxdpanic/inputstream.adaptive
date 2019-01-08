@@ -2564,7 +2564,7 @@ std::uint16_t Session::GetVideoHeight() const
     if (ret > 720) ret = 720;
     break;
   case 4:
-    if (ret > 1080) ret = 1080;
+    if (ret > 1088) ret = 1080;
     break;
   default:
     ;
